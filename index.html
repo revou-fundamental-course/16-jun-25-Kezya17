@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Matematik Segitiga</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Kalkulator Matematik Segitiga</h1>
+        </header>
+
+        <main>
+            <!-- Area Calculation Section -->
+            <section class="calculator-section">
+                <h2>Luas Segitiga</h2>
+                <div class="triangle-image">
+                    <!-- Placeholder for triangle image -->
+                    <img src="luas.webp" alt="Triangle for Area Calculation">
+                </div>
+                <div class="formula">
+                    <h3>Rumus Luas Segitiga:</h3>
+                    <p>L = 1/2 × Alas × Tinggi</p>
+                </div>
+                <div class="input-group">
+                    <label for="base">Alas (a):</label>
+                    <input type="number" id="base" placeholder="Masukkan panjang alas">
+                    <div class="error-message" id="base-error"></div>
+                </div>
+                <div class="input-group">
+                    <label for="height">Tinggi (t):</label>
+                    <input type="number" id="height" placeholder="Masukkan tinggi">
+                    <div class="error-message" id="height-error"></div>
+                </div>
+                <div class="button-group">
+                    <button id="calculateAreaBtn" class="btn primary">Hitung Luas</button>
+                    <button id="resetAreaBtn" class="btn secondary">Reset</button>
+                </div>
+                <div class="result" id="areaResult">
+                    <!-- Area calculation result will be displayed here -->
+                </div>
+            </section>
+
+            <!-- Perimeter Calculation Section -->
+            <section class="calculator-section">
+                <h2>Keliling Segitiga</h2>
+                <div class="triangle-image">
+                    <!-- Placeholder for triangle image -->
+                    <img src="keliling.webp" alt="Triangle for Perimeter Calculation">
+                </div>
+                <div class="formula">
+                    <h3>Rumus Keliling Segitiga:</h3>
+                    <p>K = Sisi A + Sisi B + Sisi C</p>
+                </div>
+                <div class="input-group">
+                    <label for="sideA">Sisi A:</label>
+                    <input type="number" id="sideA" placeholder="Masukkan panjang sisi A">
+                    <div class="error-message" id="sideA-error"></div>
+                </div>
+                <div class="input-group">
+                    <label for="sideB">Sisi B:</label>
+                    <input type="number" id="sideB" placeholder="Masukkan panjang sisi B">
+                    <div class="error-message" id="sideB-error"></div>
+                </div>
+                <div class="input-group">
+                    <label for="sideC">Sisi C:</label>
+                    <input type="number" id="sideC" placeholder="Masukkan panjang sisi C">
+                    <div class="error-message" id="sideC-error"></div>
+                </div>
+                <div class="button-group">
+                    <button id="calculatePerimeterBtn" class="btn primary">Hitung Keliling</button>
+                    <button id="resetPerimeterBtn" class="btn secondary">Reset</button>
+                </div>
+                <div class="result" id="perimeterResult">
+                    <!-- Perimeter calculation result will be displayed here -->
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="js/script.js"></script>
+</body>
+</html>
